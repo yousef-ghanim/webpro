@@ -95,6 +95,13 @@ html {
   color: var(--light-pink);
 }
 
+.nav-btn {
+  font-size: 2.5rem;
+  color: var(--dark-pink);
+  display: none;
+  cursor: pointer;
+}
+
 /* BANNER */
 .banner {
   height: calc(100vh - 3rem);
@@ -357,4 +364,133 @@ html {
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   color: var(--light-pink);
+}
+
+@media screen and (max-width: 720px) {
+  .nav {
+    background-color: var(--bg-color);
+    box-shadow: 0.1rem 0.2rem 0.2rem var(--dark-gray);
+  }
+  .nav-links {
+    position: absolute;
+    top: 6.08rem;
+    left: 0;
+    right: 0;
+    display: block;
+    background-color: var(--bg-color);
+    height: 0;
+    overflow: hidden;
+    transition: all ease 0.2s;
+    box-shadow: 0.1rem 0.2rem 0.2rem var(--dark-gray);
+  }
+
+  .nav-links-active {
+    height: 24.32rem;
+  }
+  .nav-links a {
+    display: block;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .nav-btn {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .name {
+    font-size: 6rem;
+  }
+  .job {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    height: auto;
+    position: relative;
+  }
+  .contact {
+    position: absolute;
+    left: 1rem;
+    bottom: 0;
+  }
+  .banner {
+    flex-direction: column;
+    margin-top: 7rem;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .banner-text {
+    height: auto;
+    margin-bottom: 5rem;
+    width: 70%;
+  }
+  .name {
+    font-size: 8rem;
+  }
+  .job {
+    font-size: 3rem;
+  }
+  .banner-btn {
+    font-size: 2rem;
+  }
+  .services-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .services-item {
+    max-width: 70%;
+    margin: 3rem auto;
+  }
+  .services-title {
+    font-size: 5rem;
+  }
+  .services-underline {
+    width: 10rem;
+  }
+  .projects-container {
+    flex-direction: column;
+  }
+  .project-item {
+    width: 50%;
+    margin: 3rem auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .project-item {
+    width: 70%;
+  }
+  .projects-title {
+    font-size: 4rem;
+  }
+  .project-underline {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .name {
+    font-size: 5rem;
+  }
+  .job {
+    font-size: 2rem;
+  }
+  .banner-text {
+    width: 80%;
+  }
+  .banner-btn {
+    font-size: 1.5rem;
+  }
+  .img-container {
+    width: 35rem;
+  }
+  .services-item {
+    max-width: 90%;
+  }
+  .project-item {
+    width: 90%;
+  }
 }
