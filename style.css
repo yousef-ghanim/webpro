@@ -461,6 +461,7 @@ html {
   top: 0;
   left: 0;
   opacity: 0.3;
+  transform: scale(1.5);
 }
 
 .contact-container {
@@ -663,7 +664,7 @@ html {
     width: 15rem;
   }
   .video-container {
-    transform: scale(3);
+    transform: scale(2.3);
   }
 }
 @media screen and (max-width: 720px) {
