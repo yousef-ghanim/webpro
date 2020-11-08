@@ -137,7 +137,6 @@ html {
   background-color: var(--bg-color);
   box-shadow: 0.1rem 0.2rem 0.2rem var(--dark-gray);
   z-index: 10;
-  top: 0;
 }
 .nav-links {
   list-style: none;
@@ -301,7 +300,6 @@ html {
   font-size: 1.7rem;
   margin: 2rem auto;
   text-align: center;
-  /* color: var(--light-pink); */
   color: var(--bg-color);
 }
 
@@ -604,14 +602,14 @@ html {
   }
   .banner {
     flex-direction: column;
-    margin-top: 7rem;
+    padding-top: 3rem;
     justify-content: center;
     align-items: center;
     height: auto;
   }
   .banner-text {
     height: auto;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     width: 70%;
   }
   .name {
@@ -623,6 +621,7 @@ html {
   .banner-btn {
     font-size: 2rem;
   }
+
   .services {
     padding-top: 7rem;
   }
@@ -647,9 +646,7 @@ html {
     width: 50%;
     margin: 3rem auto;
   }
-  /* .video-container {
-    transform: scale(1.5);
-  } */
+
   .square {
     display: none;
   }
