@@ -69,8 +69,10 @@ html {
   font-size: 1.5rem;
   transition: all ease 0.3s;
   opacity: 0;
+  color: var(--dark-pink);
   background-color: var(--bg-color);
   padding: 0.2rem;
+  border-radius: 0.3rem;
 }
 
 .icon:hover i {
