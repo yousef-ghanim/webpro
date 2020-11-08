@@ -10,7 +10,7 @@ navBtn.addEventListener("click", ()=>{
 navLinks.classList.toggle("nav-links-active");
 })
 
-// Contact Icon List
+// Social Icon List
 const contactBtn = document.querySelector(".contact-btn");
 const iconList = document.querySelector(".contact-list")
 contactBtn.addEventListener("click", ()=>{
