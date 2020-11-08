@@ -155,6 +155,7 @@ html {
 .logo {
   font-family: "Grandstander", cursive;
   text-shadow: 0.1rem 0.2rem 0.2rem var(--dark-pink);
+  text-decoration: none;
   font-size: 3rem;
   font-weight: 700;
   color: var(--vdark-pink);
