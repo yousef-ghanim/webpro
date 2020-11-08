@@ -706,3 +706,8 @@ html {
     width: 90%;
   }
 }
+@media screen and (max-width: 450px) {
+  .video-container {
+    transform: scale(3);
+  }
+}
