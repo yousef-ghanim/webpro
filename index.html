@@ -11,25 +11,28 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="home">
 
     
 
     <!-- HEADER -->
     <header class="header">
-        <div class="contact">
+        <div class="social">
+            <ul class="contact-list">
             <div class="icon"><i class="fab fa-facebook"></i><span> Facebook</span></div>
             <div class="icon"><i class="fab fa-twitter"></i><span> Twitter</span></div>
             <div class="icon"><i class="fas fa-at"></i><span> E-mail</span></div>
             <div class="icon"><i class="fab fa-linkedin"></i><span> LinkedIn</span></div>
+            </ul>
+            <span class="contact-btn"><i class="fas fa-info-circle"></i></span>
         </div>
 <nav class="nav">
     <label class="logo" for="logo">Web<span>Pro</span></label>
     <li class="nav-links">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
     </li>
     <span class="nav-btn"><i class="fas fa-bars"></i></span>
 </nav>
@@ -39,7 +42,7 @@
     <div class="banner-text">
         <h1 class="name">Joe Smith</h1>
         <p class="job">Freelance web developer & app designer.</p>
-        <button class="banner-btn">Projects</button>
+        <a href="./about.html" class="banner-btn" >About</a>
     </div>
     <div class="img-container">
         <img src="./profile-pic.jpg" alt="">
@@ -49,7 +52,7 @@
     </header>
 
     <!-- SERVICES -->
-    <section class="services">
+    <section class="services" id="services">
 <h1 class="services-title">Services</h1>
 <div class="services-underline"></div>
 <div class="services-container">
@@ -74,11 +77,11 @@
 
     <!-- projects -->
 
-<section class="projects">
+<section class="projects" id="projects">
     <h1 class="projects-title">Featured Projects</h1>
     <div class="project-underline"></div>
     <div class="projects-container">
-        <article class="project-item">
+        <article class="project-item project-item1">
             <div class="img-frame">
             <img src="./1jpg.jpg" alt="">
             </div>
@@ -86,8 +89,13 @@
                 <h2 class="project-name">Downtown Cafe</h2>
                 <h3 class="company">John Brothers</h3>
             </div>
+            <!-- <div class="project-header">
+                <h1>Project</h1>
+                <span>1</span>
+            </div> -->
+            <span class="project-header"><i class="fas fa-search"></i></span>
         </article>
-        <article class="project-item">
+        <article class="project-item project-item2">
             <div class="img-frame">
             <img src="./2.jpg" alt="">
             </div>
@@ -95,8 +103,13 @@
                 <h2 class="project-name">HiTech Company</h2>
                 <h3 class="company">Telecom</h3>
             </div>
+            <!-- <div class="project-header">
+                <h1>Project</h1>
+                <span>2</span>
+            </div> -->
+            <span class="project-header"><i class="fas fa-search"></i></span>
         </article>
-        <article class="project-item">
+        <article class="project-item project-item3">
             <div class="img-frame">
             <img src="./3.jpg" alt="">
             </div>
@@ -104,20 +117,34 @@
                 <h2 class="project-name">National Library</h2>
                 <h3 class="company">Municipality</h3>
             </div>
+            <!-- <div class="project-header">
+                <h1>Project</h1>
+                <span>3</span>
+            </div> -->
+            <span class="project-header"><i class="fas fa-search"></i></span>
         </article>
         
         
     </div>
 </section>
 
-<section class="footer">
-    <div class="social">
-        <div class="icons"><i class="fab fa-facebook"></i><span> Facebook</span></div>
-        <div class="icons"><i class="fab fa-twitter"></i><span> Twitter</span></div>
-        <div class="icons"><i class="fas fa-at"></i><span> E-mail</span></div>
-        <div class="icons"><i class="fab fa-linkedin"></i><span> LinkedIn</span></div>
+<section class="contact" id="contact">
+    <video class="video-container" muted autoplay loop>
+        <source src="./contact.mp4" type="video/mp4">
+    </video>
+    <div class="square"></div>
+    <div class="contact-container">
+        <h1 class="contact-title">Contact Me</h1>
+        <div class="input-container">
+            <input type="text" placeholder="Your Name">
+            <textarea placeholder="Write Your Message"></textarea>
+            <button class="submit" type="submit">Submit</button>
+        </div>
     </div>
-    <p>&copy; <span>2020</span> Joe Smith. All Rights Resereved.</p>
+</section>
+
+<section class="footer">
+    <p>&copy; <span class="date"></span> Joe Smith. All Rights Resereved.</p>
 </section>
     <script src="app.js"></script>
 </body>
