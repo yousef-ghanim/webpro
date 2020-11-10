@@ -41,7 +41,7 @@ html {
   padding: 0.5rem;
   transition: all ease 0.3s;
 }
-.contact-btn i {
+.social-btn i {
   font-size: 3rem;
   margin-bottom: 1rem;
   color: #351e1f;
@@ -49,7 +49,7 @@ html {
   transition: all ease -2s;
   cursor: pointer;
 }
-.contact-btn i:hover {
+.social-btn i:hover {
   color: #412728;
   transform: rotateY(-90deg);
 }
@@ -79,7 +79,7 @@ html {
   transform: scale(1.2);
 }
 
-.contact-list {
+.social-list {
   height: 0;
   overflow: hidden;
   transition: all ease 0.3s;
@@ -99,7 +99,7 @@ html {
     height: 0;
   }
 }
-.contact-list-active {
+.social-list-active {
   height: 26rem;
 }
 
@@ -131,6 +131,13 @@ html {
   align-items: center;
   padding: 1rem;
 }
+.about-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 1rem;
+}
 
 .nav-fixed {
   position: fixed;
@@ -141,7 +148,17 @@ html {
 .nav-links {
   list-style: none;
 }
+.about-nav-links {
+  list-style: none;
+}
 .nav-links a {
+  margin: 0 3rem;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  color: var(--light-pink);
+}
+.about-nav-link {
   margin: 0 3rem;
   text-decoration: none;
   letter-spacing: 0.1rem;
@@ -199,6 +216,12 @@ html {
   font-weight: 700;
   letter-spacing: 0.5rem;
 }
+.about-name {
+  font-size: 7rem;
+  color: #4b2f30;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+}
 
 .job {
   font-size: 3rem;
@@ -206,6 +229,13 @@ html {
   font-weight: 700;
   letter-spacing: 0.5rem;
   margin-bottom: 3rem;
+}
+.about-info {
+  font-size: 2rem;
+  color: var(--light-pink);
+  line-height: 3rem;
+  margin-bottom: 3rem;
+  text-align: justify;
 }
 
 .banner-btn {
@@ -483,30 +513,36 @@ html {
   height: 5rem;
   width: 40rem;
   padding: 1rem;
-  color: var(--bg-color);
+  color: var(--dark-pink);
   font-size: 1.5rem;
   border: none;
-  border-radius: 5rem;
+  border-radius: 1rem;
   outline: none;
   margin-bottom: 3rem;
+}
+.input-container input:focus {
+  border: 0.2rem solid var(--dark-pink);
 }
 
 .input-container textarea {
   background-color: var(--light-pink);
   padding: 1.5rem 1rem;
-  color: var(--bg-color);
+  color: var(--dark-pink);
   font-size: 1.5rem;
   max-height: 15rem;
   min-height: 15rem;
   min-width: 40rem;
   max-width: 40rem;
   border: none;
-  border-radius: 3rem;
+  border-radius: 1rem;
   outline: none;
   margin-bottom: 3rem;
 }
+.input-container textarea:focus {
+  border: 0.2rem solid var(--dark-pink);
+}
 ::placeholder {
-  color: var(--bg-color);
+  color: var(--dark-pink);
   letter-spacing: 0.1rem;
 }
 .submit {
@@ -515,7 +551,7 @@ html {
   border: none;
   width: 15rem;
   margin: auto;
-  border-radius: 5rem;
+  border-radius: 1rem;
   font-size: 2rem;
   padding: 0.5rem 2rem;
   letter-spacing: 0.2rem;
@@ -588,8 +624,15 @@ html {
   .name {
     font-size: 6rem;
   }
+  .about-name {
+    font-size: 5rem;
+  }
   .job {
     font-size: 2rem;
+  }
+  .about-info {
+    margin: 0 3rem 3rem 3rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -707,5 +750,8 @@ html {
 @media screen and (max-width: 450px) {
   .video-container {
     transform: scale(3);
+  }
+  .about-name {
+    font-size: 4rem;
   }
 }

@@ -11,10 +11,10 @@ navLinks.classList.toggle("nav-links-active");
 })
 
 // Social Icon List
-const contactBtn = document.querySelector(".contact-btn");
-const iconList = document.querySelector(".contact-list")
+const contactBtn = document.querySelector(".social-btn");
+const iconList = document.querySelector(".social-list")
 contactBtn.addEventListener("click", ()=>{
-iconList.classList.toggle("contact-list-active");
+iconList.classList.toggle("social-list-active");
 })
 
 // project Animation
