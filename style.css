@@ -592,8 +592,8 @@ html {
   .nav {
     background-color: var(--bg-color);
     box-shadow: 0.1rem 0.2rem 0.2rem var(--dark-gray);
-    top: 0;
   }
+
   .nav-links {
     position: absolute;
     top: 6.08rem;
