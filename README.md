@@ -1,4 +1,11 @@
-A protfolio website built by CSS and Javascript
+# Webpro
 
-Click the the link below to try the app:
-(https://yousef-ghanim.github.io/webpro/)
+A protfolio website built by CSS and Javascript. [Click here](https://yousef-ghanim.github.io/webpro/) to preview.
+
+![project image](webpro.jpg)
+
+## Technologies Used:
+
+- CSS
+- Html
+- Javascript
